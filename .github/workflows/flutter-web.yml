@@ -22,7 +22,7 @@ jobs:
           channel: stable
 
       - run: flutter pub get
-      - run: flutter build web --release
+      - run: flutter build web --release --base-href "/peblo_story_buddy/"
 
       - uses: actions/upload-pages-artifact@v3
         with:
